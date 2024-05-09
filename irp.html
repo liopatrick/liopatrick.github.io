@@ -1,14 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<div class="container">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Cybersecurity Incident Response Plan</title>
 </head>
 <body>
-    <p>Cybersecurity Incident Response Plan</p><p>Introduction</p><p>This document outlines the strategic and tactical approach for responding to cybersecurity incidents, with a particular focus on ransomware attacks. It is designed to provide clear and actionable steps to mitigate damage, eradicate the threat, and recover system functionality.</p><p></p><p>Purpose </p><p>The purpose of this Incident Response Plan is to equip our organization with a systematic response to manage and resolve ransomware attacks efficiently, minimizing operational disruption and financial losses.</p><p></p><p>Scope</p><p>This plan covers all information systems, networks, and data assets within the organization's operational control. It includes responses to ransomware that affect both on-premises and cloud-based infrastructures.</p><p></p><p>Objectives</p><p>● Quickly detect ransomware incidents.<br>● Minimize the spread of ransomware within our systems.<br>● Eradicate the ransomware from affected systems.<br>● Restore encrypted data from backups.<br>● Review and enhance security measures post-incident.</p><p>Event/Incident</p><p>Before</p><p>● Audit and Document All Connected Devices:<br>○ Regularly update an inventory of all devices connected to the network, including workstations, servers, and mobile devices.<br>○ Implement a configuration management database (CMDB) to track device details such as operating system, software installed, network connections, and security configurations.</p><p>● Follow IT business’ best practices / plan<br>○ Implement strong data backup and encryption practices.<br>○ Ensure antivirus and antimalware solutions are up to date.<br>○ Establish Network Segmentation:<br>■ Design and enforce network segmentation policies to limit how devices communicate across the network, thereby reducing the spread of ransomware.<br>■ Create secure zones in the network that segregate critical devices and information from general user access areas.</p><p>● Conduct regular security awareness training for all employees.</p><p>During</p><p>● Communicate the incident to all resources in this incident response plan.<br>○ IR plan participants act on their assigned roles </p><p>● Identify Impacted Devices:<br>○ Determine which devices are compromised and document specifics such as IP address, device type, user, and observed symptoms of the ransomware.<br>○ Use network monitoring tools to visualize network traffic and pinpoint other devices that may be communicating with the infected system.</p><p>● Isolate Infected Devices:<br>○ Immediately disconnect affected devices from all network connections, both wired and wireless, to prevent the ransomware from spreading to other network segments.<br>○ Implement quarantines or blocklists on network equipment to restrict traffic to and potentially impacted devices.</p><p>● Identify the start of the infection (patient zero) in order to benchmark recovery efforts.</p><p>After</p><p>● Review and Analyze Device Connections:<br>○ Conduct a thorough analysis of how the ransomware could spread among connected devices. Identify any security lapses or policy breaches.<br>○ Analyze firewall, intrusion detection systems, and system logs to understand the ransomware’s path and method of propagation through connected devices.</p><p>● Reintegrate Devices Safely:<br>○ Ensure that all devices, including those isolated, are fully cleaned, restored from trusted backups if necessary, and verified before reconnecting to the network.<br>○ Gradually reintegrate devices into the network, starting with non-critical systems to verify network security measures are effective in preventing another outbreak.</p><p>● Begin forensic analysis to determine the ransomware source and method of entry.<br>● Restore systems and data from backups.<br>● Perform a thorough security audit and system hardening.<br>● Document incident and lessons learned.<br>● Review and update the incident response plan based on lessons learned.</p><p>Roles and Responsibilities</p><p>Head of Security</p><p>● Supervise the overall incident management process to ensure compliance with legal and regulatory requirements.<br>● Oversee the communication strategy, ensuring clarity and timeliness of updates to internal and external stakeholders.</p><p>Response Team</p><p>● Perform technical analysis to trace the source of the ransomware and assess the impact on systems.<br>● Coordinate with external cybersecurity specialists for advanced threat analysis and mitigation strategies.</p><p>System Administrators</p><p>● Implement immediate security controls to limit access to ransomware-infected systems.<br>● Manage the technical restoration of IT systems and ensure the secure reintegration of devices into the network.</p><p>Non-technical Stakeholders </p><p>C-level executives<br>● Review daily IR report<br>● Review post-mortem reports</p><p>Employees<br>● Report potential incidents and suspicious activity when necessary</p><p>Incident Response Approach</p><p>Preparation</p><p>● Maintain a comprehensive inventory of all assets, with priority given to critical assets for regular security updates and patch management.<br>● Establish a robust communication plan that includes escalation paths and external contacts for crisis communication.</p><p>Detection and Analysis</p><p>● Employ advanced monitoring tools to detect anomalies indicative of a ransomware attack, such as unusual outbound traffic or large-scale file modifications.<br>● Collaborate with cybersecurity firms to leverage threat intelligence for quicker identification of the ransomware variant involved.</p><p>Containment, Elimination, and Recovery</p><p>● Execute a segmented network strategy to isolate infected segments without disrupting entire business operations.<br>● Utilize clean backups to restore data, ensuring no reintroduction of the ransomware into the network.</p><p>Communication Plan Details</p><p>● Establish a clear guideline on how and when to report incidents to regulatory bodies, considering different jurisdictions if operating internationally.<br>● Breach disclosure required within 30 days  </p><p>● Outline specific protocols for escalating incidents within the organization, including contact lists, escalation thresholds, and procedures for assembling the response team.</p><p>● Develop predefined templates for communicating with impacted external parties, including customers and partners ensuring consistent and legally vetted messaging.</p><p>Analysis Afterwards</p><p>Policy Creation</p><p>● Refine Incident Response Team<br>● Define clear roles and responsibilities for the incident response team, ensuring members are trained in their specific areas.<br>● Update the IRP annually or after significant changes in the threat landscape or business operations.</p><p>Updating and Maintenance</p><p>● Review and update access controls and security policies to tighten security and reduce the risk of similar incidents.<br>● Review the IRP quarterly to incorporate new cybersecurity trends, technologies, and lessons learned from recent incidents.<br>● Involve a broader range of stakeholders in the update process, including C-level executives that may be impacted by cybersecurity incidents.</p><p>Conclusion</p><p>Importance</p><p>Given the dynamic nature of cyber threats, particularly ransomware, it is critical to continually evolve our cybersecurity defenses. This Incident Response Plan not only prepares us to respond effectively to incidents but also strengthens our overall security posture against future threats.</p>
+    <div class="container">
+        <h1>Cybersecurity Incident Response Plan</h1>
+        <h2>Introduction</h2>
+        <p>This document outlines the strategic and tactical approach for responding to cybersecurity incidents, with a particular focus on ransomware attacks. It is designed to provide clear and actionable steps to mitigate damage, eradicate the threat, and recover system functionality.</p>
+        
+        <h2>Purpose</h2>
+        <p>The purpose of this Incident Response Plan is to equip our organization with a systematic response to manage and resolve ransomware attacks efficiently, minimizing operational disruption and financial losses.</p>
+        
+        <h2>Scope</h2>
+        <p>This plan covers all information systems, networks, and data assets within the organization's operational control. It includes responses to ransomware that affect both on-premises and cloud-based infrastructures.</p>
+        
+        <h2>Objectives</h2>
+        <ul>
+            <li>Quickly detect ransomware incidents.</li>
+            <li>Minimize the spread of ransomware within our systems.</li>
+            <li>Eradicate the ransomware from affected systems.</li>
+            <li>Restore encrypted data from backups.</li>
+            <li>Review and enhance security measures post-incident.</li>
+        </ul>
+
+        <h3>Event/Incident</h3>
+        <h4>Before</h4>
+        <ul>
+            <li>Audit and Document All Connected Devices:
+                <ul>
+                    <li>Regularly update an inventory of all devices connected to the network, including workstations, servers, and mobile devices.</li>
+                    <li>Implement a configuration management database (CMDB) to track device details such as operating system, software installed, network connections, and security configurations.</li>
+                </ul>
+            </li>
+            <li>Follow IT business’ best practices / plan
+                <ul>
+                    <li>Implement strong data backup and encryption practices.</li>
+                    <li>Ensure antivirus and antimalware solutions are up to date.</li>
+                    <li>Establish Network Segmentation:
+                        <ul>
+                            <li>Design and enforce network segmentation policies to limit how devices communicate across the network, thereby reducing the spread of ransomware.</li>
+                            <li>Create secure zones in the network that segregate critical devices and information from general user access areas.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Conduct regular security awareness training for all employees.</li>
+        </ul>
+                <h4>During</h4>
+        <ul>
+            <li>Communicate the incident to all resources in this incident response plan.
+                <ul>
+                    <li>IR plan participants act on their assigned roles.</li>
+                </ul>
+            </li>
+            <li>Identify Impacted Devices:
+                <ul>
+                    <li>Determine which devices are compromised and document specifics such as IP address, device type, user, and observed symptoms of the ransomware.</li>
+                    <li>Use network monitoring tools to visualize network traffic and pinpoint other devices that may be communicating with the infected system.</li>
+                </ul>
+            </li>
+            <li>Isolate Infected Devices:
+                <ul>
+                    <li>Immediately disconnect affected devices from all network connections, both wired and wireless, to prevent the ransomware from spreading to other network segments.</li>
+                    <li>Implement quarantines or blocklists on network equipment to restrict traffic to and potentially impacted devices.</li>
+                </ul>
+            </li>
+            <li>Identify the start of the infection (patient zero) in order to benchmark recovery efforts.</li>
+        </ul>
+
+        <h4>After</h4>
+        <ul>
+            <li>Review and Analyze Device Connections:
+                <ul>
+                    <li>Conduct a thorough analysis of how the ransomware could spread among connected devices. Identify any security lapses or policy breaches.</li>
+                    <li>Analyze firewall, intrusion detection systems, and system logs to understand the ransomware’s path and method of propagation through connected devices.</li>
+                </ul>
+            </li>
+            <li>Reintegrate Devices Safely:
+                <ul>
+                    <li>Ensure that all devices, including those isolated, are fully cleaned, restored from trusted backups if necessary, and verified before reconnecting to the network.</li>
+                    <li>Gradually reintegrate devices into the network, starting with non-critical systems to verify network security measures are effective in preventing another outbreak.</li>
+                </ul>
+            </li>
+            <li>Begin forensic analysis to determine the ransomware source and method of entry.</li>
+            <li>Restore systems and data from backups.</li>
+            <li>Perform a thorough security audit and system hardening.</li>
+            <li>Document incident and lessons learned.</li>
+            <li>Review and update the incident response plan based on lessons learned.</li>
+        </ul>
+
+        <h2>Roles and Responsibilities</h2>
+        <h3>Head of Security</h3>
+        <ul>
+            <li>Supervise the overall incident management process to ensure compliance with legal and regulatory requirements.</li>
+            <li>Oversee the communication strategy, ensuring clarity and timeliness of updates to internal and external stakeholders.</li>
+        </ul>
+        <h3>Response Team</h3>
+        <ul>
+            <li>Perform technical analysis to trace the source of the ransomware and assess the impact on systems.</li>
+            <li>Coordinate with external cybersecurity specialists for advanced threat analysis and mitigation strategies.</li>
+        </ul>
+        <h3>System Administrators</h3>
+        <ul>
+            <li>Implement immediate security controls to limit access to ransomware-infected systems.</li>
+            <li>Manage the technical restoration of IT systems and ensure the secure reintegration of devices into the network.</li>
+        </ul>
+        <h3>Non-technical Stakeholders</h3>
+        <ul>
+            <li>C-level executives:
+                <ul>
+                    <li>Review daily IR report.</li>
+                    <li>Review post-mortem reports.</li>
+                </ul>
+            </li>
+            <li>Employees:
+                <ul>
+                    <li>Report potential incidents and suspicious activity when necessary.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Incident Response Approach</h2>
+        <h3>Preparation</h3>
+        <ul>
+            <li>Maintain a comprehensive inventory of all assets, with priority given to critical assets for regular security updates and patch management.</li>
+            <li>Establish a robust communication plan that includes escalation paths and external contacts for crisis communication.</li>
+        </ul>
+        <h3>Detection and Analysis</h3>
+        <ul>
+            <li>Employ advanced monitoring tools to detect anomalies indicative of a ransomware attack, such as unusual outbound traffic or large-scale file modifications.</li>
+            <li>Collaborate with cybersecurity firms to leverage threat intelligence for quicker identification of the ransomware variant involved.</li>
+        </ul>
+        <h3>Containment, Elimination, and Recovery</h3>
+        <ul>
+            <li>Execute a segmented network strategy to isolate infected segments without disrupting entire business operations.</li>
+            <li>Utilize clean backups to restore data, ensuring no reintroduction of the ransomware into the network.</li>
+        </ul>
+        <h3>Communication Plan Details</h3>
+        <ul>
+            <li>Establish a clear guideline on how and when to report incidents to regulatory bodies, considering different jurisdictions if operating internationally.</li>
+            <li>Breach disclosure required within 30 days.</li>
+            <li>Outline specific protocols for escalating incidents within the organization, including contact lists, escalation thresholds, and procedures for assembling the response team.</li>
+            <li>Develop predefined templates for communicating with impacted external parties, including customers and partners ensuring consistent and legally vetted messaging.</li>
+        </ul>
+        <h3>Analysis Afterwards</h3>
+        <ul>
+            <li>Policy Creation</li>
+            <li>Refine Incident Response Team
+                <ul>
+                    <li>Define clear roles and responsibilities for the incident response team, ensuring members are trained in their specific areas.</li>
+                    <li>Update the IRP annually or after significant changes in the threat landscape or business operations.</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Updating and Maintenance</h3>
+        <ul>
+            <li>Review and update access controls and security policies to tighten security and reduce the risk of similar incidents.</li>
+            <li>Review the IRP quarterly to incorporate new cybersecurity trends, technologies, and lessons learned from recent incidents.</li>
+            <li>Involve a broader range of stakeholders in the update process, including C-level executives that may be impacted by cybersecurity incidents.</li>
+        </ul>
+        <h2>Conclusion</h2>
+        <p>Given the dynamic nature of cyber threats, particularly ransomware, it is critical to continually evolve our cybersecurity defenses. This Incident Response Plan not only prepares us to respond effectively to incidents but also strengthens our overall security posture against future threats.</p>
+    </div>
 </body>
-</div>
 </html>
+
