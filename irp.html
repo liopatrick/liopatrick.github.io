@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             display: flex;
@@ -13,12 +13,8 @@
             width: 20%;
             background-color: #f0f0f0;
             padding: 10px;
-            position: relative; /* Added to enable relative positioning */
+            padding-top: 50px; /* Offset for the table of contents */
         }
-        .toc {
-            position: absolute; /* Absolute positioning within the sidebar */
-            top: 100px; /* Moves the TOC down */
-            width: 100%;
         .content {
             width: 80%;
             padding: 20px;
@@ -26,7 +22,7 @@
         h1 {
             font-size: 2.5em; /* Increased font size for the main title */
         }
-        h2, h3, h4 {
+        h1, h2, h3, h4 {
             color: #003262;
         }
     </style>
@@ -34,7 +30,6 @@
 </head>
 <body>
     <div class="sidebar">
-        <h2>Table of Contents</h2>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
             <li><a href="#purpose">Purpose</a></li>
