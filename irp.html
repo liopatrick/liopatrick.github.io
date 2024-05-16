@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
     <style>
         body {
             display: flex;
-            "Open Sans",sans-serif
+            font-family: 'Open Sans', sans-serif;
         }
         .sidebar {
             width: 20%;
             background-color: #f0f0f0;
             padding: 10px;
-            padding-top: 50px; /* Offset for the table of contents */
+            position: relative; /* Added to enable relative positioning */
         }
+        .toc {
+            position: absolute; /* Absolute positioning within the sidebar */
+            top: 100px; /* Moves the TOC down */
+            width: 100%;
         .content {
             width: 80%;
             padding: 20px;
@@ -22,7 +26,7 @@
         h1 {
             font-size: 2.5em; /* Increased font size for the main title */
         }
-        h1, h2, h3, h4 {
+        h2, h3, h4 {
             color: #003262;
         }
     </style>
